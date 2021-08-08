@@ -1,5 +1,7 @@
 
 module.exports.handler = async (event, context) => {
+  // dump request to Netlify console
+  console.log(JSON.stringify(event))
   switch (event.httpMethod) {
     case "GET":
       return {
