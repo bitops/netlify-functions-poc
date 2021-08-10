@@ -1,0 +1,14 @@
+{
+  "name": "netlify-functions-poc",
+  "version": "0.0.1",
+  "description": "POC of Lambda Functions backed by Netlify",
+  "dependencies": {
+    "ramda": "^0.27.1"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
