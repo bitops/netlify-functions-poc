@@ -1,6 +1,6 @@
 const { welcomeMessage } = require('./../../lib/index.js');
 
-module.exports.handler = async (event, context) => {
+const handler = async (event, context) => {
   // dump request to Netlify console
   console.log(JSON.stringify(event))
   switch (event.httpMethod) {
@@ -21,3 +21,5 @@ module.exports.handler = async (event, context) => {
       }
   }
 };
+
+module.exports = handler
