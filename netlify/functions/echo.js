@@ -1,3 +1,4 @@
+const { welcomeMessage } = require('./lib/index.js');
 
 module.exports.handler = async (event, context) => {
   // dump request to Netlify console
@@ -6,7 +7,7 @@ module.exports.handler = async (event, context) => {
     case "GET":
       return {
         statusCode: 200,
-        body: JSON.stringify({message: "get received"})
+        body: JSON.stringify({message: `${welcomeMessage("friend!")}`})
       }
     case "POST":
       return {
