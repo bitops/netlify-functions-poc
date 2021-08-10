@@ -1,4 +1,4 @@
-const { welcomeMessage } = require('./lib/index.js');
+const { welcomeMessage } = require('./../../lib/index.js');
 
 module.exports.handler = async (event, context) => {
   // dump request to Netlify console
