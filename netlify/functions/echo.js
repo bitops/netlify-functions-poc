@@ -7,17 +7,17 @@ const handler = async (event, context) => {
     case "GET":
       return {
         statusCode: 200,
-        body: JSON.stringify({message: `${welcomeMessage("friend!")}`})
+        body: JSON.stringify({message: `${welcomeMessage("GET 200")}`})
       }
     case "POST":
       return {
         statusCode: 200,
-        body: JSON.stringify({message: "post received"})
+        body: JSON.stringify({message: `${welcomeMessage("POST 200")}`})
       }
     default:
       return {
         statusCode: 400,
-        body: JSON.stringify({message: "not found"})
+        body: JSON.stringify({message: `${welcomeMessage("Error 400")}`})
       }
   }
 };
